@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.css';
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <h1>Trader Board</h1>
-      <nav></nav>
+      <nav className={styles.nav}></nav>
     </header>
   );
 };
