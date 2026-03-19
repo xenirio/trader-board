@@ -1,0 +1,18 @@
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  /* Placeholder for future navigation links */
+  min-width: 100px; /* Ensure visibility for placeholder */
+}
