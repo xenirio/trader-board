@@ -1,0 +1,15 @@
+.welcome-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px; /* Example spacing */
+}
+
+.welcome-section h1 {
+  color: #333;
+  font-size: 2.5em;
+}
+
+.welcome-section p {
+  color: #666;
+  font-size: 1.2em;
+}
