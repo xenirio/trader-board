@@ -4,8 +4,8 @@ import styles from './WelcomeSection.module.css';
 const WelcomeSection = () => {
   return (
     <section className={styles.welcomeSection}>
-      <h1 className={styles.heading}>Welcome to Trader Board!</h1>
-      <p className={styles.description}>Your personal platform for managing trades and investments.</p>
+      <h1>Welcome to Trader Board!</h1>
+      <p>Your ultimate platform for managing and tracking your trading activities. Get insights into your performance and make informed decisions.</p>
     </section>
   );
 };
