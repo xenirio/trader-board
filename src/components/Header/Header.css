@@ -1,0 +1,26 @@
+/* src/components/Header/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #282c34;
+  color: white;
+  border-bottom: 1px solid #61dafb;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header-nav {
+  /* Basic styling for the navigation bar */
+  min-width: 150px; /* Ensure it's visually distinct even when empty */
+  min-height: 25px;
+  border: 1px dashed #61dafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
