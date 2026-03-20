@@ -1,0 +1,19 @@
+.welcomeSection {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.welcomeSection h1 {
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.welcomeSection p {
+  color: #6c757d;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
