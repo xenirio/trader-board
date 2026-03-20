@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../../components/Header/Header'; // Adjust path as needed
+import Header from '../../components/Header/Header'; // Import the Header component
 
 const DashboardLandingPage = () => {
   return (
     <div>
-      <Header />
-      <h2>Welcome to your Dashboard!</h2>
-      {/* Other dashboard content goes here */}
+      <Header /> {/* Render the Header component */}
+      <h2>Dashboard Landing Page</h2>
+      {/* Other dashboard content will go here */}
     </div>
   );
 };
