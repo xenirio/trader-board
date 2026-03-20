@@ -1,0 +1,41 @@
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appName {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
