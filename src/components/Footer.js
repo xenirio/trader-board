@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className="footer">
       <p>© 2023 Trader Board</p>
-      <p>v1.0.0</p>
+      <p>Version 1.0.0</p>
     </footer>
   );
 };
