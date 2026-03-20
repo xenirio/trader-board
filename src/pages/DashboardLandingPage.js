@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const DashboardLandingPage = () => {
   return (
     <div>
-      <Header />
-      <h2>Welcome to the Dashboard!</h2>
-      {/* Other dashboard content will go here */}
+      <h1>Dashboard Landing Page</h1>
+      {/* Other content of the dashboard */}
+      <Footer />
     </div>
   );
 };
