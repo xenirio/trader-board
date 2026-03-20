@@ -1,0 +1,36 @@
+.app-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #61dafb;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.app-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.app-header nav li {
+    margin-right: 20px;
+}
+
+.app-header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.app-header nav a:hover {
+    color: #61dafb;
+}
