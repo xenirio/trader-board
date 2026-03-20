@@ -1,14 +1,17 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
+import WelcomeSection from '../../components/WelcomeSection/WelcomeSection';
+import './Dashboard.css'; // Assuming Dashboard has its own CSS
 
-function Dashboard() {
+const Dashboard = () => {
   return (
-    <div>
-      <Header />
-      <h2>Dashboard Content</h2>
-      {/* Further dashboard content will go here */}
+    <div className="dashboard-container">
+      {/* Assuming there's a header component here already */}
+      <WelcomeSection />
+      {/* Other dashboard content will go here */}
+      <h2>Your Dashboard Content</h2>
+      <p>This is where your trading data and tools will be displayed.</p>
     </div>
   );
-}
+};
 
 export default Dashboard;
