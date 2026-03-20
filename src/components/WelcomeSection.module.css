@@ -1,19 +1,18 @@
-.welcomeSection {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #e9ecef;
+
+.welcomeContainer {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.welcomeSection h1 {
-  color: #343a40;
-  margin-bottom: 15px;
+.welcomeContainer h2 {
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.welcomeSection p {
-  color: #6c757d;
-  font-size: 1.1em;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
+.welcomeContainer p {
+    color: #666;
+    font-size: 1.1em;
 }
