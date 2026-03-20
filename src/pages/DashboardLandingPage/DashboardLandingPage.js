@@ -1,12 +1,12 @@
 import React from 'react';
-import WelcomeSection from '../../components/WelcomeSection/WelcomeSection';
-import styles from './DashboardLandingPage.module.css';
+import Header from '../../components/Header/Header'; // Adjust path as needed
 
 const DashboardLandingPage = () => {
   return (
-    <div className={styles.dashboardLandingPage}>
-      <WelcomeSection />
-      {/* Other dashboard content will go here */}
+    <div>
+      <Header />
+      <h2>Welcome to your Dashboard!</h2>
+      {/* Other dashboard content goes here */}
     </div>
   );
 };
