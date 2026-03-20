@@ -1,0 +1,17 @@
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #555;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+
+  p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+}
