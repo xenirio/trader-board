@@ -1,17 +1,15 @@
 import React from 'react';
-import './Header.css';
+import { HeaderContainer, AppName, NavBar } from './Header.styles';
 
-function Header() {
+const Header = () => {
   return (
-    <header className="header">
-      <h1>Trader Board</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-        </ul>
-      </nav>
-    </header>
+    <HeaderContainer>
+      <AppName>Trader Board</AppName>
+      <NavBar>
+        {/* Placeholder for navigation links */}
+      </NavBar>
+    </HeaderContainer>
   );
-}
+};
 
 export default Header;
