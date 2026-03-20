@@ -1,13 +1,14 @@
 import React from 'react';
-import WelcomeSection from '../components/WelcomeSection/WelcomeSection';
+import Header from '../components/Header';
 
 const Dashboard = () => {
-  return (
-    <div>
-      <WelcomeSection />
-      {/* Other dashboard content will go here */}
-    </div>
-  );
-};
+    return (
+        <div>
+            <Header />
+            <h2>Dashboard Content</h2>
+            {/* Other dashboard content will go here */}
+        </div>
+    );
+}
 
 export default Dashboard;
