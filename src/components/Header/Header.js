@@ -1,18 +1,16 @@
-
 import React from 'react';
-import styles from './Header.module.css';
+import './Header.css';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <h1 className={styles.appName}>Trader Board</h1>
-        <nav className={styles.nav}>
-          <ul className={styles.navList}>
-            {/* Navigation links will go here */}
-          </ul>
-        </nav>
-      </div>
+    <header className="header">
+      <h1>Trader Board</h1>
+      <nav>
+        {/* Navigation links will go here */}
+        <ul>
+          
+        </ul>
+      </nav>
     </header>
   );
 };
