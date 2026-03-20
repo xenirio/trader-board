@@ -1,13 +1,13 @@
 import React from 'react';
-import WelcomeSection from '../components/WelcomeSection';
+import WelcomeSection from '../components/WelcomeSection/WelcomeSection';
 
 const Dashboard = () => {
   return (
     <div>
+      {/* Existing header or other content */}
+      <h2>Dashboard Page</h2>
       <WelcomeSection />
-      {/* Other dashboard content will go here */}
-      <h2>Dashboard Content</h2>
-      <p>This is where your trading data and tools will be displayed.</p>
+      {/* Other content */}
     </div>
   );
 };
