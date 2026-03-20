@@ -4,7 +4,12 @@ function Header() {
   return (
     <header>
       <h1>Trader Board</h1>
-      <nav></nav>
+      <nav>
+        {/* Placeholder for navigation links */}
+        <ul>
+
+        </ul>
+      </nav>
     </header>
   );
 }
