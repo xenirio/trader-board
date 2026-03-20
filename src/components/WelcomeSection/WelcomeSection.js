@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from './WelcomeSection.module.css';
 
-const WelcomeSection = () => {
+const WelcomeSection = ({ heading, description }) => {
   return (
     <section className={styles.welcomeSection}>
-      <h1 className={styles.welcomeTitle}>Welcome to Trader Board!</h1>
-      <p className={styles.welcomeDescription}>
-        Your ultimate platform for managing and tracking your trading activities.
-      </p>
+      <h1>{heading}</h1>
+      <p>{description}</p>
     </section>
   );
 };
