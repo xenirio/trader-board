@@ -1,13 +1,16 @@
 import React from 'react';
-import Header from '../../components/Header/Header'; // Import the Header component
+import DashboardLayout from '../../layouts/DashboardLayout';
+import Footer from '../../components/Footer/Footer';
 
 const DashboardLandingPage = () => {
   return (
-    <div>
-      <Header /> {/* Render the Header component */}
-      <h2>Dashboard Landing Page</h2>
-      {/* Other dashboard content will go here */}
-    </div>
+    <DashboardLayout>
+      <div>
+        <h1>Welcome to Trader Board</h1>
+        <p>This is your main dashboard landing page.</p>
+      </div>
+      <Footer />
+    </DashboardLayout>
   );
 };
 

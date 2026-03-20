@@ -2,10 +2,11 @@ import React from 'react';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
-      <p>© 2023 Trader Board</p>
-      <p>v1.0.0</p>
+      <p>&copy; {currentYear} Trader Board</p>
+      <p>Version 1.0.0</p>
     </footer>
   );
 };
