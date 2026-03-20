@@ -1,14 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import DashboardLandingPage from './components/DashboardLandingPage';
+import Header from './components/Header';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<DashboardLandingPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Header />
+      {/* Other components will go here */}
+    </div>
   );
 }
 
