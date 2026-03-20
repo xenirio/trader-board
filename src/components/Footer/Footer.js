@@ -3,10 +3,12 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const appVersion = 'v1.0.0'; // Placeholder for version number
+
   return (
     <footer className={styles.footer}>
-      <p>&copy; {currentYear} Trader Board</p>
-      <p>Version 1.0.0</p>
+      <p className={styles.copyright}>© {currentYear} Trader Board</p>
+      <p className={styles.version}>{appVersion}</p>
     </footer>
   );
 };
