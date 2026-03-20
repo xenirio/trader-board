@@ -3,10 +3,10 @@ import './WelcomeSection.css';
 
 const WelcomeSection = () => {
   return (
-    <div className="welcome-section">
-      <h1>Welcome to Trader Board!</h1>
-      <p>Your ultimate platform for managing and tracking your trades.</p>
-    </div>
+    <section className="welcome-section">
+      <h1>Welcome to Trader Board</h1>
+      <p>Your ultimate platform for managing and tracking your trades. Stay organized, make informed decisions, and achieve your financial goals.</p>
+    </section>
   );
 };
 
