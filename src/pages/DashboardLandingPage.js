@@ -1,13 +1,14 @@
 import React from 'react';
-import Footer from '../components/Footer';
+import WelcomeSection from '../components/WelcomeSection';
 
 const DashboardLandingPage = () => {
   return (
     <div>
-      {/* Main content of the Dashboard Landing Page */}
-      <h1>Welcome to Trader Board!</h1>
-      <p>This is your dashboard landing page.</p>
-      <Footer />
+      <WelcomeSection 
+        title="Welcome to Trader Board" 
+        description="Your personal dashboard for managing trades and market insights."
+      />
+      {/* Other dashboard content will go here */}
     </div>
   );
 };
