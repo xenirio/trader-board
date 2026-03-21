@@ -1,0 +1,108 @@
+/* src/components/LandingPage/LandingPage.module.css */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
+  --background-color: #f8f9fa;
+  --text-color: #343a40;
+}
+
+.landingPageContainer {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.ctaButton:hover {
+  background-color: #218838;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .landingPageContainer {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .section h2 {
+    font-size: 1.5em;
+  }
+
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header h1 {
+    font-size: 2.2em;
+  }
+
+  .header p {
+    font-size: 1.1em;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+  }
+}
