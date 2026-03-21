@@ -1,15 +1,15 @@
 # Next.js
-/.next/
-/out/
+.next/
+out/
 
 # Dependencies
-/node_modules/
+node_modules/
 
-# Environment variables
-/.env*.local
+# Environments
+.env*.local
 
 # TypeScript cache
-/.tsbuildinfo
+.tsbuildinfo
 
-# VSCode
-.vscode/
+# Next.js telemetry
+.next/telemetry/
