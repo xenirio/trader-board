@@ -4,54 +4,67 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem;
   text-align: center;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  padding: 60px 20px;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
 .heroTitle {
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
 }
 
 .heroSubtitle {
-  font-size: 1.5rem;
-  color: var(--secondary-color);
-  margin-bottom: 2rem;
+  font-size: 1.5em;
+  margin-bottom: 30px;
   max-width: 800px;
+  line-height: 1.6;
 }
 
 .ctaButton {
-  background-color: var(--primary-color);
+  display: inline-block;
+  background-color: #3498db;
   color: white;
-  padding: 0.8rem 2rem;
+  padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2em;
   transition: background-color 0.3s ease;
 }
 
 .ctaButton:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: #2980b9;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .heroContainer {
-    padding: 2rem 1rem;
+    padding: 40px 15px;
   }
 
   .heroTitle {
-    font-size: 2.2rem;
+    font-size: 2.5em;
   }
 
   .heroSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    margin-bottom: 20px;
   }
 
   .ctaButton {
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2em;
+  }
+
+  .heroSubtitle {
+    font-size: 1em;
   }
 }
