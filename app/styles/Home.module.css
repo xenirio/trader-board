@@ -1,0 +1,130 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f0f2f5;
+}
+
+.heroHeadline {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.heroSubtext {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.ctaButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background-color: #005bb5;
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Feature Card */
+.featureCard {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #0070f3;
+}
+
+.featureTitle {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.featureDescription {
+  color: #666;
+}
+
+/* Footer Section */
+.footerSection {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footerCopyright {
+  font-size: 0.9em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .heroHeadline {
+    font-size: 2.5em;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 50px 15px;
+  }
+
+  .heroHeadline {
+    font-size: 2em;
+  }
+
+  .heroSubtext {
+    font-size: 1em;
+  }
+
+  .ctaButton {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .featuresSection {
+    padding: 40px 15px;
+  }
+
+  .featureCard {
+    padding: 20px;
+  }
+
+  .featureTitle {
+    font-size: 1.3em;
+  }
+}
