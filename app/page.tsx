@@ -1,4 +1,5 @@
 import Hero from '../components/Hero/Hero';
+import { Features } from '../components/Features/Features';
 
 const Home = () => {
   const handleButtonClick = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         buttonText="Learn More"
         onButtonClick={handleButtonClick}
       />
+      <Features />
     </div>
   );
 };
