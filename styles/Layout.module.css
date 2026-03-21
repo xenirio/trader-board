@@ -1,10 +1,21 @@
 
 .layoutContainer {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 .mainContent {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 0 10px; /* Add some horizontal padding for smaller screens */
+  }
 }
