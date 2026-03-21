@@ -1,12 +1,9 @@
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-6xl font-bold text-primary-500 mb-4">
-        TraderBoard
-      </h1>
-      <p className="text-2xl text-secondary-400">
-        Modern trader dashboard
-      </p>
-    </main>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#1a202c', color: '#e2e8f0' }}>
+      <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>TraderBoard</h1>
+      <p style={{ fontSize: '1.5rem', marginTop: '0.5rem' }}>Modern trader dashboard</p>
+    </div>
   );
 }
