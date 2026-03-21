@@ -1,10 +1,12 @@
-'use client';
-
-export default function Page() {
+export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-gray-100">
-      <h1 className="text-5xl font-bold mb-4">TraderBoard</h1>
-      <p className="text-xl">Modern trader dashboard</p>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-6xl font-bold text-primary-500 mb-4">
+        TraderBoard
+      </h1>
+      <p className="text-2xl text-secondary-400">
+        Modern trader dashboard
+      </p>
+    </main>
   );
 }
