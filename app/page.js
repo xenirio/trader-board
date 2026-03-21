@@ -1,29 +1,29 @@
-import HeroSection from '../components/HeroSection';
-import FeatureCard from '../components/FeatureCard';
-import Footer from '../components/Footer';
-import styles from '../styles/Home.module.css';
+import HeroSection from './components/HeroSection/HeroSection';
+import FeatureCard from './components/FeatureCard/FeatureCard';
+import Footer from './components/Footer/Footer';
+import styles from './page.module.css';
 
 export default function HomePage() {
   return (
-    <div>
-      <HeroSection />
-      <main className={styles.main}>
-        <div className={styles.features}>
+    <>
+      <main>
+        <HeroSection />
+        <section className={styles.features}>
+          <FeatureCard
+            title="Connect with Traders"
+            description="Join a community of passionate traders and share your insights."
+          />
           <FeatureCard
             title="Real-Time Data"
-            description="Get real-time market data to make informed decisions."
+            description="Access up-to-the-minute market data and analysis tools."
           />
           <FeatureCard
-            title="Advanced Charting"
-            description="Use our advanced charting tools to analyze market trends."
+            title="Learn & Grow"
+            description="Improve your trading skills with resources from experienced members."
           />
-          <FeatureCard
-            title="Secure Wallet"
-            description="Keep your assets secure with our integrated wallet."
-          />
-        </div>
+        </section>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
