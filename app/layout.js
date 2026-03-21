@@ -1,19 +1,14 @@
-
-import './globals.css';
+import './globals.css'
 
 export const metadata = {
   title: 'TraderBoard',
   description: 'Modern trader dashboard',
-};
+}
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
-  );
+  )
 }

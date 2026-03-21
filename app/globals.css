@@ -10,6 +10,7 @@
   --text-muted: #8b949e;
 }
 
+/* CSS Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
