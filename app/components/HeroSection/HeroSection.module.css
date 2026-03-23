@@ -1,7 +1,7 @@
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #ffffff;
+  background-color: #1a1a1a; /* Dark background for the hero section */
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -9,12 +9,13 @@
   font-size: 3rem;
   margin: 0;
   line-height: 1.15;
+  color: #ffffff; /* White text for high contrast */
 }
 
 .description {
   font-size: 1.2rem;
   margin: 1rem 0 2rem;
-  color: #555;
+  color: #ccc; /* Lighter text for description */
 }
 
 .ctaButton {
