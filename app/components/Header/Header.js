@@ -1,7 +1,8 @@
+
 "use client";
 
 import React from 'react';
-import ThemeToggle from '@/app/components/ThemeToggle/ThemeToggle';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import styles from './Header.module.css';
 
 const Header = () => {
