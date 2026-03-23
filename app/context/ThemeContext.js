@@ -1,7 +1,6 @@
+"use client";
 
-'use client';
-
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
@@ -9,20 +8,22 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light'); // Default theme
 
   useEffect(() => {
-    // Check localStorage for saved theme preference
+    // Check localStorage for a saved theme preference
     const savedTheme = localStorage.getItem('themePreference');
     if (savedTheme) {
       setTheme(savedTheme);
     } else {
-      // If no preference, check system preference
-      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(prefersDarkMode ? 'dark' : 'light');
+      // If no preference, default to system preference
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(prefersDark ? 'dark' : 'light');
     }
   }, []);
 
   useEffect(() => {
-    // Apply theme class to body and save to localStorage
-    document.body.className = theme === 'dark' ? 'theme-dark' : 'theme-light';
+    // Apply theme class to the document html element
+    document.documentElement.className = ''; // Clear existing
+    document.documentElement.classList.add(`theme-${theme}`);
+    // Save theme preference to localStorage
     localStorage.setItem('themePreference', theme);
   }, [theme]);
 
@@ -37,4 +38,10 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
+};
