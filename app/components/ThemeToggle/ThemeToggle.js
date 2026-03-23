@@ -8,14 +8,9 @@ const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <label className={styles.switch}>
-      <input
-        type="checkbox"
-        checked={theme === 'dark'}
-        onChange={toggleTheme}
-      />
-      <span className={styles.slider}></span>
-    </label>
+    <button onClick={toggleTheme} className={styles.toggleButton}>
+      {theme === 'light' ? 'Switch to Dark' : 'Switch to Light'}
+    </button>
   );
 };
 
