@@ -6,22 +6,23 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light'); // Default to light
+  const [theme, setTheme] = useState('light'); // Default theme
 
   useEffect(() => {
-    // On mount, check localStorage for a saved theme
+    // Check localStorage for saved theme preference
     const savedTheme = localStorage.getItem('themePreference');
     if (savedTheme) {
       setTheme(savedTheme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    } else {
       // If no preference, check system preference
-      setTheme('dark');
+      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(prefersDarkMode ? 'dark' : 'light');
     }
   }, []);
 
   useEffect(() => {
-    // Apply theme class to body and save to localStorage whenever theme changes
-    document.body.className = `theme-${theme}`;
+    // Apply theme class to body and save to localStorage
+    document.body.className = theme === 'dark' ? 'theme-dark' : 'theme-light';
     localStorage.setItem('themePreference', theme);
   }, [theme]);
 
