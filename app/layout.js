@@ -1,4 +1,6 @@
 import './globals.css';
+import '@/app/styles/themes.module.css';
+import { ThemeProvider } from '@/app/context/ThemeContext';
 
 export const metadata = {
   title: 'Trader Board',
@@ -8,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

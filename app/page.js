@@ -1,11 +1,13 @@
 import HeroSection from './components/HeroSection/HeroSection';
 import FeatureCard from './components/FeatureCard/FeatureCard';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import styles from './page.module.css';
 
 export default function HomePage() {
   return (
     <>
+      <Header />
       <main>
         <HeroSection />
         <section className={styles.features}>
