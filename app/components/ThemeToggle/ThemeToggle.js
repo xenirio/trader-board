@@ -1,17 +1,21 @@
-
-'use client';
+"use client";
 
 import React from 'react';
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '@/app/context/ThemeContext';
 import styles from './ThemeToggle.module.css';
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <button onClick={toggleTheme} className={styles.toggleButton}>
-      {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
-    </button>
+    <label className={styles.switch}>
+      <input
+        type="checkbox"
+        checked={theme === 'dark'}
+        onChange={toggleTheme}
+      />
+      <span className={styles.slider}></span>
+    </label>
   );
 };
 
