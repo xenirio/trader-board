@@ -1,20 +1,21 @@
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  background-color: var(--primary-bg-color); /* Use global primary background color */
+  border-bottom: 1px solid var(--border-color); /* Use global border color */
 }
 
 .title {
   font-size: 3rem;
   margin: 0;
   line-height: 1.15;
+  color: var(--text-color); /* Use global text color for high contrast */
 }
 
 .description {
   font-size: 1.2rem;
   margin: 1rem 0 2rem;
-  color: #555;
+  color: var(--text-color); /* Use global text color for high contrast */
 }
 
 .ctaButton {
