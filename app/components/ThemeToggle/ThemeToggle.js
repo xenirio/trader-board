@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <button onClick={toggleTheme} className={styles.toggleButton}>
+    <button onClick={toggleTheme} className={styles.themeToggleButton}>
       {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
     </button>
   );
