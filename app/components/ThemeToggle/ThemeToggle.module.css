@@ -1,13 +1,13 @@
 .toggleButton {
-  background-color: var(--button-background);
-  color: var(--button-text);
-  border: 1px solid var(--button-border);
-  padding: 8px 12px;
-  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .toggleButton:hover {
-  background-color: var(--button-hover-background);
+  opacity: 0.8;
 }

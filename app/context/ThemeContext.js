@@ -1,28 +1,32 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useContext } from "react";
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light"); // Default theme
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('themePreference');
+    // Check localStorage for theme preference
+    const savedTheme = localStorage.getItem("themePreference");
     if (savedTheme) {
       setTheme(savedTheme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
+    } else {
+      // Default to system preference
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setTheme(prefersDark ? "dark" : "light");
     }
   }, []);
 
   useEffect(() => {
-    document.body.className = `theme-${theme}`;
-    localStorage.setItem('themePreference', theme);
+    // Apply theme class to body and update localStorage
+    document.body.className = theme === "dark" ? "theme-dark" : "theme-light";
+    localStorage.setItem("themePreference", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   return (

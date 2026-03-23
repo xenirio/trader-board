@@ -1,30 +1,37 @@
-
 :root {
-  /* Light Theme */
+  /* Light theme variables */
   --background-color: #ffffff;
   --text-color: #333333;
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --border-color: #dee2e6;
-  --card-background: #f8f9fa;
-  --card-border: #e2e6ea;
-  --button-background: #007bff;
-  --button-text: #ffffff;
-  --button-border: #007bff;
-  --button-hover-background: #0056b3;
+  --primary-color: #0070f3;
+  --secondary-color: #1c7ed6;
+  --card-background: #f0f0f0;
+  --border-color: #e0e0e0;
+  --toggle-bg: #ccc;
+  --toggle-circle-bg: white;
+  --toggle-bg-checked: #2196F3;
 }
 
 .theme-dark {
-  /* Dark Theme */
-  --background-color: #1a202c;
-  --text-color: #e2e8f0;
-  --primary-color: #63b3ed;
-  --secondary-color: #a0aec0;
-  --border-color: #4a5568;
-  --card-background: #2d3748;
-  --card-border: #4a5568;
-  --button-background: #63b3ed;
-  --button-text: #1a202c;
-  --button-border: #63b3ed;
-  --button-hover-background: #4299e1;
+  /* Dark theme variables */
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --primary-color: #90caf9;
+  --secondary-color: #64b5f6;
+  --card-background: #333333;
+  --border-color: #444444;
+  --toggle-bg: #555;
+  --toggle-circle-bg: #ccc;
+  --toggle-bg-checked: #90caf9;
 }
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Example usage for existing components if needed, will be updated in next steps */
+/* .some-component {
+  background-color: var(--card-background);
+  border-color: var(--border-color);
+} */
