@@ -1,23 +1,24 @@
 .card {
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-color); /* Use global border color */
   border-radius: 10px;
   padding: 1.5rem;
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
-  background-color: #ffffff;
+  background-color: var(--secondary-bg-color); /* Use global secondary background color (white in light, dark grey in dark) */
 }
 
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-color: #0070f3;
+  border-color: var(--link-color); /* Use global link color for hover effect */
 }
 
 .title {
   font-size: 1.5rem;
   margin: 0 0 1rem;
+  color: var(--text-color); /* Use global text color */
 }
 
 .description {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-color); /* Use global text color */
   margin: 0;
 }
