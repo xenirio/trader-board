@@ -1,25 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useTheme } from '../context/ThemeContext';
 import styles from './ThemeToggle.module.css';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState('light');
+  const { theme, toggleTheme } = useTheme();
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    setTheme(initialTheme);
-    document.documentElement.setAttribute('data-theme', initialTheme);
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-  };
+  if (!theme) {
+    // Avoid rendering button until theme is determined client-side
+    return null; 
+  }
 
   return (
     <button onClick={toggleTheme} className={styles.toggleButton}>
