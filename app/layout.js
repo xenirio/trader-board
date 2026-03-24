@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "./styles/themes.css";
 import ThemeToggle from "./components/ThemeToggle";
+import Footer from "./components/Footer/Footer"; // Import Footer
 import { ThemeProvider } from "./context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,6 +35,7 @@ function ThemedLayout({ children }) {
         <ThemeToggle />
       </header>
       <main>{children}</main>
+      <Footer />
     </>
   );
 }
