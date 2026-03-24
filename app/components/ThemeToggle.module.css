@@ -1,0 +1,14 @@
+/* app/components/ThemeToggle.module.css */
+.toggleButton {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.toggleButton:hover {
+  background-color: var(--border-color);
+}
