@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from './theme-context';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import AppFooter from './components/AppFooter/AppFooter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           <main>{children}</main>
-          <Footer />
+          <AppFooter />
         </ThemeProvider>
       </body>
     </html>
