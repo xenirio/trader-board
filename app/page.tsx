@@ -1,10 +1,12 @@
 export default function Home() {
   return (
-    <div className="text-center">
-      <h2 className="text-3xl font-bold">Welcome to Trader Board</h2>
-      <p className="text-muted-foreground">
-        Your all-in-one dashboard for trading.
+    <section className="flex min-h-[calc(100vh-8rem)] flex-col items-center justify-center text-center py-20 px-4">
+      <h1 className="text-5xl font-bold tracking-tight md:text-6xl">
+        Welcome to Trader Board
+      </h1>
+      <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+        Your all-in-one dashboard for trading, analysis, and real-time market data.
       </p>
-    </div>
+    </section>
   );
 }
